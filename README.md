@@ -1,6 +1,5 @@
-# Simple_Projects
-These projects were the foundations of the JS world of mine
-- Projects are arranged in Branches
-
 # Rock-Paper-Scissors-Game
-- Checkout on Branch Rock-Paper-scissors
+- checkout the game by forking the code and run the codes.
+- I will later make it in replit so that it will be playble from here only.
+
+![glimpse](https://user-images.githubusercontent.com/114183358/205508683-b3380547-0a50-4c53-a12d-8e50935a098b.jpg)
