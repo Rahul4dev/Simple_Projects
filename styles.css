@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+	--left-bg-color: rgba(87, 84, 236, 0.7);
+	--right-bg-color: rgba(43, 43, 43, 0.8);
+
+	--left-btn-hover-color: rgb(31, 31, 31);
+	--right-btn-hover-color: rgba(28, 122, 28, 1);
+	--hover-width: 75%;
+	--other-width: 25%;
+
+	--speed: 500ms;
+}
+
 * {
 	/* it does not affect element if we add padding to that */
 	box-sizing: border-box;
@@ -7,11 +19,145 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	overflow: hidden;
 	height: 100vh;
+	width: 100vw;
 	margin: 0;
 }
+
+h1 {
+	font-size: 4rem;
+	color: white;
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+
+.btn {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 50%;
+	top: 40%;
+	transform: translateX(-50%);
+	color: white;
+	border: white solid 0.2rem;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 15rem;
+	padding: 1.5rem;
+}
+
+.split.left .btn:hover {
+	background-color: var(--left-btn-hover-color);
+	border-color: var(--left-btn-hover-color);
+}
+
+.split.right .btn:hover {
+	background-color: var(--right-btn-hover-color);
+	border-color: var(--right-btn-hover-color);
+}
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #333;
+}
+
+.split {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.split.left {
+	left: 0;
+	background-image: url(https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDc5NDYyMw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	object-position: center;
+}
+
+.split.left::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	/* background-color: var(--left-bg-color); */
+}
+
+.split.right {
+	right: 0;
+	background-image: url(https://assets.xboxservices.com/assets/ef/9e/ef9e8f9f-4141-409c-9bab-659102bcc6b2.jpg?n=XSX_Page-Hero-0_768x1434.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	object-position: center;
+}
+
+.split.right::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* transform: translateY(80px); */
+	/* background-color: var(--right-bg-color); */
+}
+
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+	transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .left {
+	width: var(--hover-width);
+}
+
+.hover-left .right {
+	width: var(--other-width);
+	background-image: url(https://images.unsplash.com/photo-1535462169218-aadfe41bda09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDc5NjUyNg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+	object-fit: cover;
+	object-position: center;
+}
+
+.hover-right .right {
+	width: var(--hover-width);
+	object-position: 30px;
+}
+
+.hover-right .left {
+	width: var(--other-width);
+	background-position-x: left;
+	background-image: url(https://images.unsplash.com/photo-1585697337165-70c94dbd6812?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDc5NDQ5MQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080);
+	object-fit: cover;
+	object-position: center;
+}
+
+@media (max-width: 800px) {
+	h1 {
+		font-size: 1rem;
+		top: 30%;
+	}
+
+	.btn {
+		padding: 0.5rem;
+		width: 6rem;
+	}
+}
+
+/* x box fallback:  https://images.unsplash.com/photo-1535462169218-aadfe41bda09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDc5NjUyNg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080 */
+
+/* ps: https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDc5NDYyMw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080 */
+
+/* fall back PS:  https://images.unsplash.com/photo-1585697337165-70c94dbd6812?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDc5NDQ5MQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080 */
+
+/* <video "https://assets.xboxservices.com/assets/91/6f/916fa353-6c4d-49b8-b47d-3858bd65481e.mp4?n=AN-CONTROLLER1-D.mp4" data-vidsource-tablet="https://assets.xboxservices.com/assets/2e/74/2e74289b-3b0d-4630-8ed5-3ff30600da3f.mp4?n=AN-CONTROLLER1-T.mp4" /> */
+
+/* xbox asset : https://assets.xboxservices.com/assets/ef/9e/ef9e8f9f-4141-409c-9bab-659102bcc6b2.jpg?n=XSX_Page-Hero-0_768x1434.jpg */
