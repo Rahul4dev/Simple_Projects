@@ -5,6 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
+			rel="icon"
+			type="image/png"
+			href="https://www.google.com/s2/favicons?domain=css-tricks.com"
+		/>
+		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -12,10 +17,19 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="styles.css" />
-		<title>50ProjectDay</title>
+		<title>Don't Laugh Challenge</title>
 	</head>
 	<body>
-		<h1>Project Starter</h1>
+		<div class="container">
+			<h3>Don't Laugh Challenge</h3>
+			<div class="joke" id="joke">
+				<!-- joke inserted here -->
+				<div class="loader" id="loader">
+					<img src="Infinity-1s-100px.svg" alt="loader" />
+				</div>
+			</div>
+			<button id="jokeBtn" class="btn">Try out with new Joke</button>
+		</div>
 	</body>
 	<script src="scripts.js"></script>
 </html>
