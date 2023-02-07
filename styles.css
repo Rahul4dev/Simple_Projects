@@ -1,17 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&family=Poppins:wght@200;400;700&display=swap");
 * {
-	/* it does not affect element if we add padding to that */
-	box-sizing: border-box;
+  /* it does not affect element if we add padding to that */
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	height: 100vh;
-	margin: 0;
+  background-color: rgba(21, 3, 39, 0.938);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(21, 3, 39, 0.938) 0%,
+    rgba(21, 3, 39, 0.938) 50%,
+    #fff 50%,
+    #fff 50%
+  );
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+}
+
+.counter-container {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 5% 0 5% 0;
+}
+
+.counter-container .fav {
+  color: #fff;
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0;
+  padding: 0 0 0 10%;
+}
+.counter-container span {
+  letter-spacing: 0.5px;
+}
+
+.counter-container .fav .counter {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.input-container {
+  text-align: center;
+  align-items: center;
+  background-color: #f03e6d;
+  background-image: linear-gradient(
+    to right,
+    #f95681e9 0%,
+    #ef45aed9 50%,
+    #f03ebeb2 50%,
+    #f656e9 100%
+  );
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 60%;
+  height: 30%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-container h2 {
+  font-family: "Noto Sans Syloti Nagri", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.input-container p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.input-container input {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  padding: 10px;
+  width: 60%;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-container .input label {
+  position: absolute;
+  transform: translateX(0);
+  top: 120px;
+  left: 60px;
+
+  padding: 13px 15px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #032429;
+
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease-in-out, color 0.3s ease-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+
+::placeholder {
+  text-indent: 0;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.input-container input:focus {
+  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+  outline: none;
+}
+
+.input-container .input:focus label,
+.input-container .input:active label {
+  transform: translateX(-100%);
+}
+
+.input-container button {
+  border: 10px solid #fff;
+  border-radius: 0 5px 5px 0;
+  background-color: #fff;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.719);
+  margin-left: -5px;
+}
+
+.input-container button:active {
+  background-color: #fd9115;
+  transform: scale(0.98);
+}
+
+@media (max-width: 780px) {
+  .counter-container {
+    margin-bottom: 20px;
+  }
+  .input-container {
+    height: 230px;
+    width: 350px;
+  }
+
+  .input-container input {
+    margin-bottom: 10px;
+  }
 }
