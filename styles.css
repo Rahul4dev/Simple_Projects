@@ -1,17 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --rotate: 0deg;
+  --bg-color: #fff;
+  --size: 1rem;
+}
 
 * {
-	/* it does not affect element if we add padding to that */
-	box-sizing: border-box;
+  /* it does not affect element if we add padding to that */
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	height: 100vh;
-	margin: 0;
+  background-image: linear-gradient(to bottom right, #1e293b, #0f172a);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.element {
+  background: var(--bg-color);
+  transform-origin: center center;
+  animation: rotate 5000ms infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size);
+  height: var(--size);
+}
+
+@keyframes rotate {
+  0%,
+  100% {
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    border-radius: 5%;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%) rotate(var(--rotate));
+  }
 }
