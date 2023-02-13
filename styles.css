@@ -1,17 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
-	/* it does not affect element if we add padding to that */
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	height: 100vh;
-	margin: 0;
+  background-image: linear-gradient(
+    to right,
+    steelblue 0%,
+    #dbd9d6 50%,
+    #dbd9d6 50%,
+    #b3cbec 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: 2px solid black;
+  background-color: #fff;
+}
+
+.fill {
+  background-image: url("https://picsum.photos/id/237/150/150");
+  height: 147px;
+  width: 147px;
+  overflow: hidden;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.hovered {
+  background-color: #333;
+  border-color: #fff;
+  border-style: dashed;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
 }
