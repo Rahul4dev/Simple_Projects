@@ -1,19 +1,28 @@
 // we'll use canvas api
-// todo: Eraser function, color change
+// todo: Eraser function.
 
 const canvas = document.getElementById("canvas");
-const context = canvas.getContext("2d");
+
 const decrease = document.getElementById("decrease");
 const increase = document.getElementById("increase");
 const sizeEl = document.getElementById("size");
-const color = document.getElementById("color");
+const colorEl = document.getElementById("color");
 const clear = document.getElementById("clear");
 const eraser = document.getElementById("eraser");
+const undo = document.getElementById("undo");
+
+const context = canvas.getContext("2d");
 
 let isPressed = false;
 let x;
 let y;
+colorEl.value = "Black";
+let color = colorEl.value;
 size = sizeEl.innerText = 2;
+
+// for undo function
+let pathArray = [];
+let index = -1;
 
 // mouse events
 
@@ -21,10 +30,13 @@ eraser.addEventListener("click", () => {
   if (eraser.childNodes[0].className.includes("fa-pen")) {
     eraser.childNodes[0].className = "fa-solid fa-eraser";
     canvas.style.cursor = "grab";
-    // erase();
+    color = "#f5f5f5";
+    size = 8;
   } else {
     eraser.childNodes[0].className = "fa-solid fa-pen";
     canvas.style.cursor = "crosshair";
+    color = colorEl.value;
+    size = 4;
   }
 });
 // todo
@@ -40,24 +52,52 @@ decrease.addEventListener("click", decreaseSize);
 
 clear.addEventListener("click", () => {
   context.clearRect(0, 0, 800, 600);
-  size = sizeEl.innerText = 2;
+  eraser.childNodes[0].className = "fa-solid fa-pen";
+  canvas.style.cursor = "crosshair";
+
+  pathArray = [];
+  index = -1;
 });
 
 // canvas events
-canvas.addEventListener("mousedown", (e) => {
+canvas.addEventListener("mousedown", mousedown);
+canvas.addEventListener("mouseup", mouseup);
+canvas.addEventListener("mousemove", mousemove);
+
+// color change from pellet
+colorEl.addEventListener("change", (e) => (color = e.target.value));
+
+// undo button functions
+undo.addEventListener("click", () => {
+  if (index <= 0) {
+    context.clearRect(0, 0, 800, 600);
+  } else {
+    index -= 1;
+    pathArray.pop();
+    context.putImageData(pathArray[index], 0, 0);
+  }
+});
+
+// mouse events
+function mousedown(e) {
   isPressed = true;
 
   x = e.offsetX;
   y = e.offsetY;
-});
+}
 
-canvas.addEventListener("mouseup", (e) => {
+function mouseup(e) {
   isPressed = false;
-
+  if (e.type != "mouseout") {
+    pathArray.push(context.getImageData(0, 0, canvas.width, canvas.height));
+    index += 1;
+    console.log(pathArray);
+  }
   x = undefined;
   y = undefined;
-});
-canvas.addEventListener("mousemove", (e) => {
+}
+
+function mousemove(e) {
   if (isPressed) {
     const x2 = e.offsetX;
     const y2 = e.offsetY;
@@ -68,7 +108,7 @@ canvas.addEventListener("mousemove", (e) => {
     x = x2;
     y = y2;
   }
-});
+}
 
 // for drawing circles
 function drawCircle(x, y) {
