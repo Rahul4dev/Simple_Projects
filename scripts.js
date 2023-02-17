@@ -24,6 +24,17 @@ size = sizeEl.innerText = 2;
 let pathArray = [];
 let index = -1;
 
+clear.addEventListener("click", () => {
+  context.clearRect(0, 0, 800, 600);
+  eraser.childNodes[0].className = "fa-solid fa-pen";
+  canvas.style.cursor = "crosshair";
+
+  pathArray = [];
+  index = -1;
+  size = sizeEl.value;
+  color = colorEl.value;
+});
+
 // mouse events
 
 eraser.addEventListener("click", () => {
@@ -49,15 +60,6 @@ eraser.addEventListener("click", () => {
 increase.addEventListener("click", increaseSize);
 
 decrease.addEventListener("click", decreaseSize);
-
-clear.addEventListener("click", () => {
-  context.clearRect(0, 0, 800, 600);
-  eraser.childNodes[0].className = "fa-solid fa-pen";
-  canvas.style.cursor = "crosshair";
-
-  pathArray = [];
-  index = -1;
-});
 
 // canvas events
 canvas.addEventListener("mousedown", mousedown);
@@ -91,7 +93,6 @@ function mouseup(e) {
   if (e.type != "mouseout") {
     pathArray.push(context.getImageData(0, 0, canvas.width, canvas.height));
     index += 1;
-    console.log(pathArray);
   }
   x = undefined;
   y = undefined;
@@ -116,6 +117,7 @@ function drawCircle(x, y) {
   context.arc(x, y, size, 0, Math.PI * 2);
   context.fillStyle = color;
   context.fill();
+  console.log(pathArray);
 }
 
 // for lines
