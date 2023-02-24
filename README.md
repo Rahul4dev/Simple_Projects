@@ -31,4 +31,5 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
 ## [Drawing App with Eraser](https://github.com/Rahul4dev/Simple_Projects/tree/DrawingApp)
 ## [Kinetic Loader](https://github.com/Rahul4dev/Simple_Projects/tree/Kinetic-Loader)
 ## [Card-Reloading Animation](https://github.com/Rahul4dev/Simple_Projects/tree/Card-Reloading-Animation)
+## [Sticky Navbar](https://github.com/Rahul4dev/Simple_Projects/tree/StickyNavbar)
 ## []()
