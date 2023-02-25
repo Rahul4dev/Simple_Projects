@@ -32,4 +32,5 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
 ## [Kinetic Loader](https://github.com/Rahul4dev/Simple_Projects/tree/Kinetic-Loader)
 ## [Card-Reloading Animation](https://github.com/Rahul4dev/Simple_Projects/tree/Card-Reloading-Animation)
 ## [Sticky Navbar](https://github.com/Rahul4dev/Simple_Projects/tree/StickyNavbar)
+## [Verticle Image slider](https://github.com/Rahul4dev/Simple_Projects/tree/ImageSlider)
 ## []()
