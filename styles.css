@@ -1,17 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-	/* it does not affect element if we add padding to that */
-	box-sizing: border-box;
+  /* it does not affect element if we add padding to that */
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	height: 100vh;
-	margin: 0;
+  background-color: rebeccapurple;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.btn {
+  background-color: #fff;
+  color: rebeccapurple;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#toasts {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.toast {
+  background-color: #fff;
+  color: rebeccapurple;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.toast.info {
+  color: rgb(9, 83, 83);
+}
+.toast.alert {
+  color: yellow;
+}
+.toast.error {
+  color: red;
+}
+.toast.success {
+  color: green;
+}
+.toast.timeout {
+  color: #454545;
 }
