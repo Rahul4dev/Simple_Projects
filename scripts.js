@@ -6,7 +6,7 @@ const fast = document.querySelector("#fast");
 toggles.forEach((toggle) => {
   toggle.addEventListener("change", (e) => {
     doTheTrick(e.target);
-    console.log(e.target);
+   
   });
 });
 
