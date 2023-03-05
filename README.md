@@ -40,4 +40,6 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
 ## [Notification Popper](https://github.com/Rahul4dev/Simple_Projects/tree/NotificationPopper)
 ## [Github Profile Search](https://github.com/Rahul4dev/Simple_Projects/tree/githubProfileSearch)
 ## [Checkbox Animation](https://github.com/Rahul4dev/Simple_Projects/tree/CannotCheckAll)
+## [Todo / Notes App](https://github.com/Rahul4dev/Simple_Projects/tree/Notes_App)
+## []()
 ## []()
