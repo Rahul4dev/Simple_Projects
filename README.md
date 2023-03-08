@@ -3,6 +3,9 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
 
 #### These projects were the foundations of the [frontend world]() of mine and inspired from [Florin Pop](https://www.florin-pop.com/blog/2019/09/100-days-100-projects/)
 
+
+### [Hoverboard](https://github.com/Rahul4dev/Simple_Projects/tree/hoverBoard)
+
 ## [Password Generator](https://github.com/Rahul4dev/Simple_Projects/tree/PasswordGenerator) 📟
 ## [Auto Text Effect](https://github.com/Rahul4dev/Simple_Projects/tree/AutoTextEffect) ![](https://media.giphy.com/media/THR0IKB4QfgAp7P7ln/giphy.gif)
 ## [Animated Countdown](https://github.com/Rahul4dev/Simple_Projects/tree/CountDownAnimation)
