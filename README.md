@@ -12,6 +12,7 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
    [Progress Steps](https://github.com/Rahul4dev/Simple_Projects/tree/Progress_Steps)
   [Rotating Navigation](https://github.com/Rahul4dev/Simple_Projects/tree/Rotating-Navigation)
  ### [Hidden Search Widget](https://github.com/Rahul4dev/Simple_Projects/blob/Search-Widget)
+ ### [Pokemon Cards](https://github.com/Rahul4dev/Simple_Projects/tree/Pokedex)🔴
    [Blurry Loading](https://github.com/Rahul4dev/Simple_Projects/tree/Blur-Loading)
   ### [Scoll Animation](https://github.com/Rahul4dev/Simple_Projects/tree/ScrollAnimation)
    [Split Landing Page](https://github.com/Rahul4dev/Simple_Projects/tree/split-landing-page)
