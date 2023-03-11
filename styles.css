@@ -1,17 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
-	/* it does not affect element if we add padding to that */
-	box-sizing: border-box;
+  /* it does not affect element if we add padding to that */
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	height: 100vh;
-	margin: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.background {
+  background: url('https://images.unsplash.com/photo-1468971050039-be99497410af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDA1NTkwMw&ixlib=rb-4.0.3&q=80&w=1080')
+    no-repeat center center/cover;
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  z-index: -1;
+  filter: blur(20px);
+}
+
+#login-container {
+  position: absolute;
+  top: 30%;
+  left: 60%;
 }
