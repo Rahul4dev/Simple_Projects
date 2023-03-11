@@ -5,3 +5,6 @@ _**Description: By using simple CSS and JS, blur effect adjust on the length of 
   - _Can be Done:_ Js can also add color change of the button according to the length of the password.
   
   ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzgxZWNiYjVkOGFlYWFkZGZjODhmN2Q2Y2UxMjJhNzMxMzM5YjBmOCZjdD1n/9X9MnrYQ6Aiq6thUDF/giphy.gif)
+
+
+![](https://media.giphy.com/media/OuQT4zLfzXYAJeP9X0/giphy.gif)
