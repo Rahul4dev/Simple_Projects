@@ -1,17 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap');
 
 * {
-	/* it does not affect element if we add padding to that */
-	box-sizing: border-box;
+  /* it does not affect element if we add padding to that */
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	height: 100vh;
-	margin: 0;
+  background-color: #fbfcfe;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-image: linear-gradient(
+    to right,
+    #a9a9a9 0%,
+    #ededed 30%,
+    #e0dddd 60%,
+    #b3b3b3 100%
+  );
+  border: 3px black solid;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 35px;
+}
+
+.container p {
+  font-size: 21px;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.container p code {
+  color: #066583;
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 25px;
+}
+
+.code {
+  border-radius: 5px;
+  font-size: 50px;
+  height: 120px;
+  width: 100px;
+  border: 1px solid #eee;
+  margin: 1%;
+  text-align: center;
+  /* -moz-appearance: textfield; */
+}
+
+.code::-webkit-inner-spin-button,
+.code::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.code:valid {
+  border-color: #3498db;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  max-width: 400px;
+  color: #171717;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .code-container {
+    flex-wrap: wrap;
+  }
+
+  .code {
+    font-size: 60px;
+    height: 80px;
+    max-width: 70px;
+  }
 }
