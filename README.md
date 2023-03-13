@@ -19,6 +19,7 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
  ### [Hidden Search Widget](https://github.com/Rahul4dev/Simple_Projects/blob/Search-Widget)
  ### [Pokemon Cards](https://github.com/Rahul4dev/Simple_Projects/tree/Pokedex)🔴
    ### [Blurry Loading](https://github.com/Rahul4dev/Simple_Projects/tree/Blur-Loading)
+   ###[Account Verification Code Enter](https://github.com/Rahul4dev/Simple_Projects/tree/VerificationCode)
   ### [Scoll Animation](https://github.com/Rahul4dev/Simple_Projects/tree/ScrollAnimation)
    ### [Split Landing Page](https://github.com/Rahul4dev/Simple_Projects/tree/split-landing-page)
   ### [Form Wave Animation](https://github.com/Rahul4dev/Simple_Projects/tree/WaveForm-Input)
