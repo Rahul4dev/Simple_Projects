@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-		<title>50ProjectDay</title>
-	</head>
-	<body>
-		<h1>Project Starter</h1>
-	</body>
-	<script src="scripts.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/cute-clipart/64/null/r--v1.png"
+      type="image/x-icon"
+    />
+    <title>Live User Filter</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2 class="title">Live user Filter</h2>
+        <small class="subtitle">Search by name or location</small>
+        <input type="text" id="filter" placeholder="Search" />
+      </header>
+      <ul class="user-list" id="result">
+        <li>
+          <h4>Loading...</h4>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
 </html>
