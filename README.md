@@ -25,6 +25,7 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
   ### [Form Wave Animation](https://github.com/Rahul4dev/Simple_Projects/tree/WaveForm-Input)
    ### [Quote Generator](https://github.com/Rahul4dev/Simple_Projects/tree/Quote_Generator)
    ### [Rock paper scissors](https://github.com/Rahul4dev/Simple_Projects/tree/Rock-paper-scissors)
+   ### [Search Filter](https://github.com/Rahul4dev/Simple_Projects/tree/Seach_Filter)
   ### [Search Widget](https://github.com/Rahul4dev/Simple_Projects/tree/Search-Widget)
  ### [Sound Bar](https://github.com/Rahul4dev/Simple_Projects/tree/Sound_Bar)
   ### [Laughter Challenge](https://github.com/Rahul4dev/Simple_Projects/tree/LaughterChallenge)
