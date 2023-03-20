@@ -1,17 +1,19 @@
 // We use Event Bubbling and propagation
 
 const ratings = document.querySelectorAll('.rating');
+const ratingsContainer = document.querySelector('.ratings-container');
 const sendBtn = document.querySelector('#send');
 const panel = document.querySelector('#panel');
 
 let selectedRating = 'Satisfied';
 
-panel.addEventListener('click', (e) => {
+ratingsContainer.addEventListener('click', (e) => {
   if (e.target.parentNode.classList.contains('rating')) {
     removeActiveClasses();
 
     e.target.parentNode.classList.add('active');
-    selectedRating = e.target.nextElementSibling.innerHTML;
+    selectedRating = e.target.parentNode.childNodes[3].innerHTML;
+    console.log(e.target.parentNode.childNodes[3].innerHTML);
   }
 });
 
