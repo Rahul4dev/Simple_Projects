@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-		<title>50ProjectDay</title>
-	</head>
-	<body>
-		<h1>Project Starter</h1>
-	</body>
-	<script src="scripts.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/man-face-with-glasses-icon.svg"
+      type="image/png"
+    />
+    <title>Feedback-UI</title>
+  </head>
+  <body>
+    <div id="panel" class="panel">
+      <strong
+        >How satisfied are you with our <br />
+        customer support performance?</strong
+      >
+      <div class="ratings-container">
+        <div class="rating">
+          <img src="./images/cry-icon.svg" alt="" />
+          <small class="rate">Unhappy</small>
+        </div>
+        <div class="rating">
+          <img src="./images/strange-icon.svg" alt="" />
+          <small class="rate">Neutral</small>
+        </div>
+        <div class="rating active">
+          <img src="./images/smiley-icon.svg" alt="" />
+          <small class="rate">Satisfied</small>
+        </div>
+      </div>
+      <button class="btn" id="send">Send Review</button>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
 </html>
