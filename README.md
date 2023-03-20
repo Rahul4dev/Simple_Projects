@@ -14,6 +14,7 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
  ### [Double Click Heart ❤](https://github.com/Rahul4dev/Simple_Projects/tree/DoubleClickHeart)
  ### [Image Carousel 🖼 ](https://github.com/Rahul4dev/Simple_Projects/tree/ImageCarousel)
   ### [Expanding Cards](https://github.com/Rahul4dev/Simple_Projects/tree/Expanding_Card)
+  ### [Feedback UI](https://github.com/Rahul4dev/Simple_Projects/tree/FeedbackUI)
    ### [Progress Steps](https://github.com/Rahul4dev/Simple_Projects/tree/Progress_Steps)
   ### [Rotating Navigation](https://github.com/Rahul4dev/Simple_Projects/tree/Rotating-Navigation)
  ### [Hidden Search Widget](https://github.com/Rahul4dev/Simple_Projects/blob/Search-Widget)
