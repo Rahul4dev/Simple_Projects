@@ -10,6 +10,7 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
 ### [3D effect on Background Image: 3D Minions](https://github.com/Rahul4dev/Simple_Projects/tree/3D_Minions)
 ### [Auto Text Effect](https://github.com/Rahul4dev/Simple_Projects/tree/AutoTextEffect) ![](https://media.giphy.com/media/THR0IKB4QfgAp7P7ln/giphy.gif)  
 ### [Animated Countdown](https://github.com/Rahul4dev/Simple_Projects/tree/CountDownAnimation)
+### [Custom Range Slider](https://github.com/Rahul4dev/Simple_Projects/tree/RangeSlider) ![](https://media.giphy.com/media/du2ovdP0h1T04KROOx/giphy.gif)
 ### [Mobile Tab Navigation](https://github.com/Rahul4dev/Simple_Projects/tree/TabNavigation)
  ### [Double Click Heart ❤](https://github.com/Rahul4dev/Simple_Projects/tree/DoubleClickHeart)
  ### [Image Carousel 🖼 ](https://github.com/Rahul4dev/Simple_Projects/tree/ImageCarousel)
