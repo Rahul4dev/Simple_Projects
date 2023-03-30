@@ -1,17 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 * {
-	/* it does not affect element if we add padding to that */
-	box-sizing: border-box;
+  /* it does not affect element if we add padding to that */
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	height: 100vh;
-	margin: 0;
+  margin: 0px;
+  background-color: rgb(192, 255, 234);
+}
+#container {
+  position: absolute;
+  margin: auto;
+  width: 100vw;
+  height: 80pt;
+  top: 0;
+  bottom: 0;
+  filter: url(#threshold) blur(0.6px);
+}
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 80pt;
+  background-color: aquamarine;
+  text-align: center;
+  user-select: none;
 }
