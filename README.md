@@ -1,4 +1,4 @@
-# Morphed Text Aniamtion
+# Morphed Text Animation
 
 Inspired from : [Nishika Verma](https://github.com/NishikaVerma26/Text-Morphing/tree/main)
 
