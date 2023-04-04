@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-		<title>50ProjectDay</title>
-	</head>
-	<body>
-		<h1>Project Starter</h1>
-	</body>
-	<script src="scripts.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./netflixRound.png" type="image/x-icon" />
+    <title>Netflix Navigation</title>
+  </head>
+  <body>
+    <button class="nav-btn open-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <img src="./Netflix.png" alt="logo" class="logo" />
+    <p class="text">Mobile Navigation</p>
+
+    <div class="nav nav-black">
+      <div class="nav nav-red">
+        <div class="nav nav-white">
+          <button class="nav-btn close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <img src="./Netflix.png" alt="logo" class="logo" />
+          <ul class="list">
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Life at Netflix</a></li>
+            <li>
+              <ul>
+                <li><a href="#">Netflix culture memo</a></li>
+                <li><a href="#">Work life balance</a></li>
+                <li><a href="#">Inclusion & Diversity</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Career</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
 </html>
