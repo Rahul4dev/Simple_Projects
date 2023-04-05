@@ -8,6 +8,7 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
 ### [Custom Tooltip](https://github.com/Rahul4dev/Simple_Projects/tree/CustomTooltip)
 ### [Password Strength Indicator](https://github.com/Rahul4dev/Simple_Projects/tree/PasswordStrengthIndicator) 
 ### [Password Generator](https://github.com/Rahul4dev/Simple_Projects/tree/PasswordGenerator) 📟 
+### [Natflix Nav-Animation](https://github.com/Rahul4dev/Simple_Projects/tree/Netflix_Navigation)
 ### [3D effect on Background Image: 3D Minions](https://github.com/Rahul4dev/Simple_Projects/tree/3D_Minions)
 ### [Auto Text Effect](https://github.com/Rahul4dev/Simple_Projects/tree/AutoTextEffect) ![](https://media.giphy.com/media/THR0IKB4QfgAp7P7ln/giphy.gif)  
 ### [Animated Countdown](https://github.com/Rahul4dev/Simple_Projects/tree/CountDownAnimation)
