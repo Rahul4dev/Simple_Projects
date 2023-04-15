@@ -1,5 +1,3 @@
-// require('dotenv').config();
-
 const quiz = document.getElementById('quiz');
 const answerEls = document.querySelectorAll('.answer');
 const questionHeading = document.getElementById('question');
@@ -12,9 +10,8 @@ const d_text = document.getElementById('d_text');
 
 const submitBtn = document.getElementById('submit');
 
-// const apiKey = process.env.apiKey;
-
-const apiKey = 'yV9PCJZX1pdp8Ux3abNBAXeOS1WAC7KVEeo5KDFc';
+//const apiKey = process.env.apiKey;
+// Or get your own api key from : https://quizapi.io/
 
 let data;
 let currentQuizData;
