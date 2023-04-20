@@ -5,6 +5,7 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
 
 
 ### [Hoverboard](https://github.com/Rahul4dev/Simple_Projects/tree/hoverBoard)  
+### [Testimonial Switch](https://github.com/Rahul4dev/Simple_Projects/tree/TestimonialBoxSwitcher)
 ### [Custom Tooltip](https://github.com/Rahul4dev/Simple_Projects/tree/CustomTooltip)
 ### [Password Strength Indicator](https://github.com/Rahul4dev/Simple_Projects/tree/PasswordStrengthIndicator) 
 ### [Password Generator](https://github.com/Rahul4dev/Simple_Projects/tree/PasswordGenerator) 📟 
