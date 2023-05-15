@@ -3,7 +3,7 @@ This Repo is in continuation with [Component Project Repo](https://github.com/Ra
 
 #### These projects were the foundations of the [frontend world]() of mine and inspired from [Florin Pop](https://www.florin-pop.com/blog/2019/09/100-days-100-projects/)
 
-
+### [Covid Dashboard](https://github.com/Rahul4dev/Simple_Projects/tree/Covid_Dashboard)
 ### [Hoverboard](https://github.com/Rahul4dev/Simple_Projects/tree/hoverBoard)  
 ### [Testimonial Switch](https://github.com/Rahul4dev/Simple_Projects/tree/TestimonialBoxSwitcher)
 ### [Custom Tooltip](https://github.com/Rahul4dev/Simple_Projects/tree/CustomTooltip)
